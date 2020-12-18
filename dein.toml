@@ -57,3 +57,6 @@ repo = 'ntpeters/vim-better-whitespace'
 hook_add = """
 source ~/.config/nvim/plugins/whitespace.rc.vim
 """
+
+[[plugins]]
+repo = 'Townk/vim-autoclose'
