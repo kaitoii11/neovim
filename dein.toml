@@ -8,7 +8,7 @@ source ~/.config/nvim/plugins/nerdtree.rc.vim
 """
 
 [[plugins]]
-repo = 'Xuyuanp/nerdtree-git-plugin' 
+repo = 'Xuyuanp/nerdtree-git-plugin'
 
 [[plugins]]
 repo    = 'vim-airline/vim-airline'
@@ -21,33 +21,39 @@ source ~/.config/nvim/plugins/airline.rc.vim
 repo = 'vim-airline/vim-airline-themes'
 
 [[plugins]]
-repo = "neoclide/coc.nvim"
+repo = 'neoclide/coc.nvim'
 merge = 0
 rev = "release"
 hook_add = """
 source ~/.config/nvim/plugins/coc.rc.vim
-""" 
+"""
 [[plugins]]
-repo = "Shougo/defx.nvim"
+repo = 'Shougo/defx.nvim'
 depends = ["defx-git"]
 hook_add = """
 source ~/.config/nvim/plugins/defx.rc.vim
 """
 
 [[plugins]]
-repo ="kristijanhusak/defx-git"
+repo = 'kristijanhusak/defx-git'
 
 [[plugins]]
-repo = "Shougo/denite.nvim"
+repo = 'Shougo/denite.nvim'
 hook_add = """
 source ~/.config/nvim/plugins/denite.rc.vim
 """
 
 [[plugins]]
-repo = "shougo/deol.nvim"
+repo = 'shougo/deol.nvim'
 hook_add = """
 source ~/.config/nvim/plugins/deol.rc.vim
 """
 
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
+
+[[plugins]]
+repo = 'ntpeters/vim-better-whitespace'
+hook_add = """
+source ~/.config/nvim/plugins/whitespace.rc.vim
+"""
