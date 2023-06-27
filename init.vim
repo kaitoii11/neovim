@@ -3,9 +3,9 @@ if !&compatible
 endif
 
 " reset augroup
-augroup MyAutoCmd
-  autocmd!
-augroup END
+"augroup MyAutoCmd
+"  autocmd!
+"augroup END
 " dein settings {{{ dein自体の自動インストール
 let s:cache_home = empty($XDG_CACHE_HOME) ? expand('~/.cache') : $XDG_CACHE_HOME
 let s:dein_dir = s:cache_home . '/dein'
@@ -102,6 +102,9 @@ nnoremap k gk
 nmap <up> gk
 nmap <down> gj
 imap <c-j> <esc>
+imap <c-h> <Left>
+imap <c-l> <Right>
+
 
 if &term =~ "xterm"
   let &t_SI .= "\e[?2004h"
@@ -128,5 +131,3 @@ else
 endif
 
 set secure
-
-

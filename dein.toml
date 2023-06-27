@@ -27,21 +27,21 @@ rev = "release"
 hook_add = """
 source ~/.config/nvim/plugins/coc.rc.vim
 """
-[[plugins]]
-repo = 'Shougo/defx.nvim'
-depends = ["defx-git"]
-hook_add = """
-source ~/.config/nvim/plugins/defx.rc.vim
-"""
+#[[plugins]]
+#repo = 'Shougo/defx.nvim'
+#depends = ["defx-git"]
+#hook_add = """
+#source ~/.config/nvim/plugins/defx.rc.vim
+#"""
+#
+#[[plugins]]
+#repo = 'kristijanhusak/defx-git'
 
-[[plugins]]
-repo = 'kristijanhusak/defx-git'
-
-[[plugins]]
-repo = 'Shougo/denite.nvim'
-hook_add = """
-source ~/.config/nvim/plugins/denite.rc.vim
-"""
+#[[plugins]]
+#repo = 'Shougo/denite.nvim'
+#hook_add = """
+#source ~/.config/nvim/plugins/denite.rc.vim
+#"""
 
 [[plugins]]
 repo = 'shougo/deol.nvim'
@@ -60,3 +60,19 @@ source ~/.config/nvim/plugins/whitespace.rc.vim
 
 [[plugins]]
 repo = 'Townk/vim-autoclose'
+
+[[plugins]]
+repo = 'nvim-lua/plenary.nvim'
+
+[[plugins]]
+repo = 'nvim-telescope/telescope.nvim'
+depends = ["plenary.nvim"]
+hook_add = """
+source ~/.config/nvim/plugins/telescope.rc.vim
+"""
+
+[[plugin]]
+repo = 'kyazdani42/nvim-web-devicons'
+
+[[plugins]]
+repo = 'cespare/vim-toml'
