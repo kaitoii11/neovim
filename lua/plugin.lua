@@ -59,6 +59,8 @@ return {
 		dependencies = {
 			"stevearc/dressing.nvim",
 			"MunifTanjim/nui.nvim",
+			"nvim-lua/plenary.nvim",
+			{ "ColinKennedy/mega.cmdparse", dependencies = { "ColinKennedy/mega.logging" } },
 		},
 	},
 	{
@@ -70,23 +72,12 @@ return {
 	},
 	{
 		"nvim-treesitter/nvim-treesitter",
-        opts = {
-            indent = { enable = true },
-            highlight = { enable = true },
-            fold = { enable = true },
-            ensure_installed = {
-                "lua",
-                "python",
-                "javascript",
-                "typescript",
-                "html",
-                "json",
-                "markdown",
-                "bash",
-                "yaml",
-                "toml",
-            },
-        },
+		branch = "main",
+		lazy = false,
+		build = ":TSUpdate",
+		config = function()
+			require("plugins.treesitter").setup()
+		end,
 	},
     {
         "CopilotC-Nvim/CopilotChat.nvim",
