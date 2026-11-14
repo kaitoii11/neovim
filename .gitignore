@@ -1,0 +1,6 @@
+# Local npm install of tree-sitter-cli (install it globally instead)
+node_modules/
+package.json
+package-lock.json
+
+.DS_Store
